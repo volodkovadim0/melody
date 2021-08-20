@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+.header-container{
+    background: #635854;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 4px solid #3596F5;
+}
+.navbar{
+    max-width: 1280px;
+    margin: auto;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu{
+    margin: 0;
+    padding: 0;
+
+list-style-type: none;
+    display:flex;
+    text-align: center;
+}
+.menu-item{
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+.menu-link{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-contacts{
+    text-align: right;
+}
+.navbar-text{
+    display: block;
+    color: #fff;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.navbar-phone{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.main{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    padding-top: 54px;
+}
+
+
+.home-image path{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.home-image path:hover{
+    opacity: 1;
+}
+
+
+.main-info{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.counter-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-down{
+    transform: rotateX(180deg);
+}
+
+.counter-button{
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button-primary{
+    background: #3596F5;
+    border-radius: 6px;
+    padding: 16px 36px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.main-title{
+    margin: 0;
+    font-family: "Bebas Neue",sans-serif;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 44px;
+     color: #635854;
+}
+.floor-counter{
+    font-family: "Bebas Neue",sans-serif;
+    font-size: 124px;
+    color: #635854;
+}
+path.current-floor{
+    opacity: 1;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.2s;
+
+}
+.flats path{
+    opacity: 0;
+    cursor: pointer;
+}
+.flats path:hover{
+    opacity: 1;
+}
+
+.is-open{
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.modal-dialog{
+    max-width: 1000px;
+    min-height: 565px;
+    background-color: #fff;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+}
+.modal-image{
+    background-color: #EBEBEB;
+    width: 60%;
+    text-align: center;
+    padding: 50px;
+}
+.modal-title{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0;
+    margin-bottom: 26px;
+}
+
+.modal-info{
+    padding: 50px 46px;
+
+}
+.flat-list{
+    list-style: none;
+    margin-top: 55px;
+    padding: 0;
+}
+.flat-link{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #635854;
+}
+.flat-item{
+    margin-bottom: 10px;
+}
+
+.flat-link:hover{
+    text-decoration: underline;
+    color:#3596F5;
+}
+path.current-flat{
+    opacity: 1;
+}
+
+a.current-flat{
+    text-decoration: underline;
+}
+
+
+.modal-alert{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #635854;
+    margin-top: 56px;
+}
+
+
+.modal-close-button{
+    position: absolute;
+    top: 38px;
+    right: 27px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.footer{
+    background-color: #D7D7D7;
+    padding-top: 50px;
+    padding-bottom: 56px;
+    border-top: 4px solid #3596F5;
+}
+
+.footer-content{
+    max-width: 1280px;
+    margin: auto;
+    height: 171px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer-menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display:flex;
+    text-align: center;
+}
